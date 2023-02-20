@@ -1,0 +1,59 @@
+/*Estilos aplicados a la sesión CV*/
+body {
+    background-color: #e8d8ff;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: inset;
+    padding: 15px;
+    text-align: justify;
+}
+
+#principal {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#secundario {
+    text-align: center;
+    border-bottom: thick double #32a1ce;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(fondo2.jpeg);
+}
+
+.titulos {
+    box-shadow: 10px 5px 5px rgb(147, 147, 180);
+}
+
+.imagen:hover {
+    filter: saturate(180%);
+}
+
+.apgrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    padding: auto;
+    gap: 30px;
+}
+
+.info {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.info2 {
+    grid-column-start: 2;
+    grid-row-end: 2;
+    box-shadow: 10px 5px 5px rgb(65, 65, 136)
+}
+
+.info3 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}

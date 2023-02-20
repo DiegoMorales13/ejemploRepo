@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    border: 2px solid #000;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    /* indica dirección de como se acomodan los elementos*/
+    /* 0 px arr aba y auto derech y izq*/
+
+}
+
+.item {
+    color: #fff;
+    margin: 20px;
+    background-color: rgb(166, 159, 201);
+    text-align: center;
+}
+
+
+/* margin: arriba derecha abajo izquierda
+10 pxarr 20 pxder 30 pxabaj 40 pxizq
+
+ó
+
+margin: arriba/abajo der/izq
+15pxarriabaj 80pxderizq
+
+margin: arri/abaj/der/izq
+35px para todos
+
+*/
+
+/* Estilos para calculadora */
+
+.contenedor {
+    border-style: outset;
+    margin: 30px;
+    padding: 30px;
+    border-width: 8px;
+    max-width: 20%;
+    background-color: #cfb1ff;
+}
+
+.pantalla {
+    width: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-style: oblique;
+    direction: rtl;
+}
+
+.botones1 {
+    background-color: #b38bff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    width: 22%;
+}
+
+
+.botones2 {
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    width: 22%;
+}
+
+.botones3 {
+    background-color: #e8d8ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    color: grey;
+    text-align: center;
+    width: 22%;
+}
+
+#igual {
+    background-color: #e8d8ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    color: grey;
+    text-align: center;
+    width: 45.5%;
+}
+
+.botones1:hover {
+    background-color: gold;
+}
+
+.botones2:hover {
+    background-color: gold;
+}
+
+.botones3:hover {
+    background-color: gold;
+}
+
+#igual:hover {
+    background-color: gold;
+}

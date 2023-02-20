@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calc flex</title>
+  <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+  <!--Grid y Flexbox para organizar elementos a conveniencia
+  Flexbox necesita: Contenedor, ítem ( hijo del contenedor), eje principal por defecto es una fila horizontal, eje transversal va perpendicular a la principal-->
+
+  <div class="container">
+    <h1 class="item">Hola </h1>
+    <h1 class="item">Chau</h1>
+    <h1 class="item">Hola de nuevo</h1>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br>
+
+  <!--Calculadora Prueba-->
+
+  <div class="contenedor">
+
+    <div>
+      <input type="number" min="0" class="pantalla">
+    </div>
+    <br>
+
+    <div>
+      <button class="botones1">AC</button>
+      <button class="botones1">C</button>
+      <button class="botones1">%</button>
+      <button class="botones1">/</button>
+    </div>
+    <br>
+
+    <div>
+      <button class="botones2">7</button>
+      <button class="botones2">8</button>
+      <button class="botones2">9</button>
+      <button class="botones3">x</button>
+    </div>
+    <br>
+
+    <div>
+      <button class="botones2">4</button>
+      <button class="botones2">5</button>
+      <button class="botones2">6</button>
+      <button class="botones3">-</button>
+    </div>
+    <br>
+
+    <div>
+      <button class="botones2">1</button>
+      <button class="botones2">2</button>
+      <button class="botones2">3</button>
+      <button class="botones3">+</button>
+    </div>
+    <br>
+
+    <div>
+      <button class="botones2">0</button>
+      <button class="botones2">.</button>
+      <button id="igual">=</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

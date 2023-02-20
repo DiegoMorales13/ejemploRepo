@@ -1,0 +1,53 @@
+/* Reglas de estilo de CSS
+selector{
+    propiedad:valor
+    propiedad:valor
+    propiedad:valor 
+
+    Selector puede ser:
+    -etiqueta (nombre)
+
+    -class (clases) las clases se pueden repetir en uno o múltiples elementos, por ejemplo: nacionalidad, color de ojos, color de piel, estudiantes,....,etc.
+    -ID
+} */
+
+p {
+    color: #ff54c9
+}
+
+button {
+    background-color: darkgoldenrod;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Cuando en una fuente se separan por comas y salen varias es porque depende del S.O CSS coloca una u otra si no encuentra la fuente.*/
+
+.titulo {
+    color: green
+}
+
+/*las clases se llaman con . + el nombre de la clase asignado por mi .titulo en este caso*/
+
+.cursiva {
+    font-style: italic;
+}
+
+#botoncillo {
+    padding: 20px;
+    background-color: blue;
+}
+
+/* los ID se llaman con # + el nombre en este caso #botoncillo*/
+
+.contenedor {
+    border: 0.1em dotted #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.espaciado {
+    padding: 15px;
+}

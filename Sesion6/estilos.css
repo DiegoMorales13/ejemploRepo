@@ -1,0 +1,14 @@
+/* los comentarios se hacen con barra + *
+/* los estilos de CSS son: Externo, Interno y Embebido, el que se recomienda siempre es el Externo,
+por orden y practividad con el fin de replicar los cambios a diferentes cosas que tenga. Externo es abriendo
+un nuevo archivo .css y desde allí se modifica, pero para ello se necesita hacer un link dentro del HEAD del HTML. */
+
+body {
+    background-color: darkgray;
+    font-size: larger;
+    margin: 50px;
+}
+
+p {
+    background-color: rgb(81, 158, 158);
+}
