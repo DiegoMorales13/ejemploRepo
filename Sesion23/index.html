@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sesión 13 de marzo</title>
+</head>
+
+<body>
+  <!--
+
+  <p name="parrafo1">Hola</p>
+  <p>Chau</p>
+
+  <input id="ingreso" type="text">
+
+  <button id="boton" class="saludo" onclick="mostrar_mensaje()">
+    clic on me
+  </button>
+-->
+
+  <div id="pruebilla"></div>
+
+  <input id="name" type="text" placeholder="Nombre">
+  <input id="lastname" type="text" placeholder="Apellido">
+  <input id="age" type="number" placeholder="Edad">
+  <button onclick="mostrar_mensaje()">
+    ¡Mostrar!
+  </button>
+
+  <script src="./script.js"></script>
+  <!--Se coloca aquí al final porque si se pone en el head estaría llamando elementos que aún no han sido creados o no han nacido, es como si luego de esta linea estuviese escribiendo lo de mi JS externo y allí no se ha declarado ningún parrafo ni nada.-->
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tareas</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>Lista de Tareas</h1>
+  <div>
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo">
+    <br>
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion">
+    <br>
+    <button onclick="agregarTarea()">Agregar Tarea</button>
+  </div>
+  <ul id="listaTareas"></ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
