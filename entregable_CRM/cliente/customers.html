@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema CRM | Clientes Potenciales</title>
+  <link rel="stylesheet" href="./stylesCustomers.css">
+</head>
+
+<body>
+  <section class="cabecera">
+    <h1 class="titulo-principal">CLIENTES POTENCIALES</h1>
+  </section>
+  <div class="menu-container">
+    <div class="menu-principal">
+      <a href="/" class="ov-btn-slide-bottom">
+        INICIO </a>
+      <a href="/contacto" class="ov-btn-slide-bottom">
+        CONTACTO</a>
+    </div>
+  </div>
+
+
+  <div class="contenedor-formulario">
+    <div>
+      <h3 class="titulo-formulario">Información básica del cliente potencial</h3>
+    </div>
+    <form id="form_potencial">
+      <div class="grid-item">
+        <label for="">Nombre completo</label>
+        <input type="text" name="nombre" placeholder="Ingrese nombre completo">
+      </div>
+      <div class="grid-item">
+        <label for="">País de origen</label>
+        <input type="text" name="pais" placeholder="Ingrese país de origen">
+      </div>
+      <div class="grid-item">
+        <label for="">Correo electrónico</label>
+        <input type="email" name="correo" placeholder="Ingrese correo electrónico">
+      </div>
+      <div class="grid-item">
+        <label for="">Número telefónico</label>
+        <input type="text" name="telefono" placeholder="Ingrese número telefónico">
+      </div>
+      <div class="grid-item">
+        <label for="">Fecha de contacto</label>
+        <input id="inputfecha" type="date" name="fecha">
+      </div>
+      <button id="btn_agregar" type="submit"> Agregar </button>
+    </form>
+  </div>
+
+  <div class="contenedor-tabla">
+    <h2 class="titulo-tabla" id="mensaje"></h2>
+    <table id="tabla-clientes">
+
+    </table>
+  </div>
+
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!--JS-->
+  <script src="./script_potenciales.js"></script>
+</body>
+
+</html>

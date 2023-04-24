@@ -1,0 +1,17 @@
+{
+  "name": "mi-proyecto",
+  "version": "0.1.0",
+  "description": "CRM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Morales",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2",
+    "nodemailer": "^6.7.2",
+    "dotenv": "^10.4.0"
+  }
+}

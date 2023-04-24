@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestión de Clientes | Contacto</title>
+  <link rel="stylesheet" href="./stylesContacts.css">
+</head>
+
+<body>
+  <section class="header">
+    <h1 class="main-title">CONTACTO</h1>
+  </section>
+
+  <div class="menu-container">
+    <div class="menu">
+      <a href="/" class="ov-btn-slide-bottom"> 
+        INICIO
+      </a>
+      <a href="/clientes" class="ov-btn-slide-bottom">
+        
+        CLIENTES</a>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <div>
+      <h3 class="sub-title">Formulario de ingreso de contacto</h3>
+    </div>
+
+    <form id="contact-form">
+      <div class="grid-item">
+        <label for="">Nombre del cliente</label>
+        <select name="client-name" id="clients">
+        </select>
+      </div>
+      <div class="grid-item">
+        <label for="">Fecha</label>
+        <input type="date" name="date">
+      </div>
+      <div class="grid-item">
+        <label for="">Estado</label>
+        <select name="status">
+          <option value="closed">Cerrado</option>
+          <option value="interested">Interesado</option>
+          <option value="not-interested">No interesado</option>
+        </select>
+      </div>
+      <div class="grid-item">
+        <label for="">Tipo de contacto</label>
+        <select name="contact-type">
+          <option value="presencial">Presencial</option>
+          <option value="virtual">Virtual</option>
+          <option value="telefonica">Telefonica</option>
+          <option value="correo">Correo</option>
+        </select>
+      </div>
+      <div class="grid-item5">
+        <label for="">Descripción de la reunión</label>
+        <textarea name="description" id="" cols="50" rows="5"></textarea>
+      </div>
+      <button id="add-btn" type="submit"> AGREGAR </button>
+    </form>
+
+  </div>
+
+  <div class="table-container">
+    <h2 class="sub-title" id="message"></h2>
+    <table id="contacts-table">
+    </table>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./script_contactos.js"></script>
+</body>
+
+</html>
