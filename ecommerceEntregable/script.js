@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Funciones
 
   /**
-  * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
+  * Dibuja todos los productos a partir de la base de datos.
   */
   function r_Productos() {
     baseDeDatos.forEach((info) => {
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
   * Evento para añadir un producto al carrito de la compra
   */
   function anyadirProductoAlCarrito(evento) {
-    // Anyadimos el Nodo a nuestro carrito
+    // Añadimos el Nodo a nuestro carrito
     carrito.push(evento.target.getAttribute('marcador'))
     // Actualizamos el carrito 
     r_Carrito();
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
       miNodo.appendChild(miBoton);
       DOMcarrito.appendChild(miNodo);
     });
-    // Renderizamos el precio total en el HTML
+    
     DOMtotal.textContent = calcularTotal();
   }
 
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carrito = carrito.filter((carritoId) => {
       return carritoId !== id;
     });
-    // volvemos a renderizar
+   
     r_Carrito();
     // Actualizamos el LocalStorage
     guardarCarritoEnLocalStorage();
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function vaciarCarrito() {
     // Limpiamos los productos guardados
     carrito = [];
-    // Renderizamos los cambios
+
     r_Carrito();
     // Borra LocalStorage
     localStorage.clear();
@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function cargarCarritoDeLocalStorage() {
-    // ¿Existe un carrito previo guardado en LocalStorage?
     if (miLocalStorage.getItem('carrito') !== null) {
       // Carga la información
       carrito = JSON.parse(miLocalStorage.getItem('carrito'));
