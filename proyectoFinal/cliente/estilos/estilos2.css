@@ -1,0 +1,31 @@
+body {
+  background-image: url('lab3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.btn-outline-secondary {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-secondary:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.form-select-lg {
+  transition: all 0.2s ease-in-out;
+}
+
+.form-select-lg:hover {
+  transform: scale(1.05);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
