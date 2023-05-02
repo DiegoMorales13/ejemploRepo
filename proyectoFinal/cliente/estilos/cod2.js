@@ -13,9 +13,7 @@ btnDiligenciar.addEventListener('click', () => {
   const selectExamen = document.getElementById('select-examen');
   const selectedOption = selectExamen.options[selectExamen.selectedIndex].value;
 
-  if (selectedOption === 'hemograma') {
-    window.open("hemograma.html", "_self");
-  } else if (selectedOption === 'uroanalisis') {
+  if (selectedOption === 'uroanalisis') {
     window.open("uroanalisis.html", "_self");
   }
 });

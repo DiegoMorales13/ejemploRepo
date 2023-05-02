@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario Uroanálisis</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./estilos3.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="uroTitulo">Uroanálisis</h1>
+    <h2>Por favor ingrese los siguientes datos:</h2>
+    <form>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <label for="nombre" class="form-label">Nombre completo:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo"
+            required>
+        </div>
+        <div class="col-md-4">
+          <label for="edad" class="form-label">Edad:</label>
+          <input type="number" class="form-control" id="edad" name="edad" placeholder="Ingresa tu edad" required>
+        </div>
+        <div class="col-md-4">
+          <label for="sexo" class="form-label">Sexo:</label>
+          <select class="form-select" id="sexo" name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <h2>Análisis Macroscópico:</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="color" class="form-label">Color:</label>
+          <select class="form-select" id="color" name="color" required>
+            <option value="no_color">No color</option>
+            <option value="paja_palida">Paja pálida</option>
+            <option value="amarillo_transparente">Amarillo transparente</option>
+            <option value="amarillo_oscuro">Amarillo oscuro</option>
+            <option value="ambar">Ámbar</option>
+            <option value="rojo">Rojo</option>
+            <option value="naranja">Naranja</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="morado">Morado</option>
+            <option value="espuma">Espuma</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="aspecto" class="form-label">Aspecto:</label>
+          <select class="form-select" id="aspecto" name="aspecto" required>
+            <option value="option1">Clara</option>
+            <option value="option2">Turbia</option>
+            <option value="option3">Oscura</option>
+          </select>
+        </div>
+        <br>
+        <h2>Análisis Químico:</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label for="pH" class="form-label">Valor de pH:</label>
+            <input type="number" class="form-control" id="pH" name="pH" placeholder="Ingresa el valor del pH" required>
+          </div>
+          <div class="col-md-4">
+            <label for="leucoesterasa" class="form-label">Valor de Leucoesterasa:</label>
+            <select class="form-select" id="leucoesterasa" name="leucoesterasa" required>
+              <option value="negativo">Negativo</option>
+              <option value="trazas">Trazas</option>
+              <option value="positivo">Positivo</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="blood" class="form-label">Presencia de sangre</label>
+            <select class="form-select" id="sangre" name="sangre" required>
+              <option value="+sangre">Sí</option>
+              <option value="-sangre">No</option>
+            </select>
+          </div>
+        </div>
+        <h2>Análisis Microscópico:</h2>
+        <div class="row g-2">
+          <div class="col-md-3">
+            <label for="leucos" class="form-label">Valor de Leucocitos:</label>
+            <input type="number" class="form-control" id="leucos" name="leucos"
+              placeholder="Ingresa el valor de Leucocitos" required>
+          </div>
+          <div class="col-md-3">
+            <label for="density" class="form-label">Valor de Densidad:</label>
+            <input type="number" class="form-control" id="density" name="density"
+              placeholder="Ingresa el valor correspondiente a densidad" required>
+          </div>
+          <div class="col-md-3">
+            <label for="germen" class="form-label">Valor de Gérmenes:</label>
+            <input type="number" class="form-control" id="germen" name="germen"
+              placeholder="Ingresa el valor correspondiente a cantidad de gérmenes" required>
+          </div>
+          <div class="col-md-3">
+            <label for="creatinina" class="form-label">Valor de creatinina:</label>
+            <input type="number" class="form-control" id="creatinina" name="creatinina"
+              placeholder="Ingresa el valor de creatinina" required>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button" id="back2">Regresar</button>
+        <button type="submit" class="btn btn-success" type="button">Enviar Formulario</button>
+      </div>
+    </form>
+  </div>
+  <script src="./cod3.js"></script>
+</body>
+
+</html>
