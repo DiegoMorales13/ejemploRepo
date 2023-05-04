@@ -64,7 +64,8 @@
         <div class="row g-3">
           <div class="col-md-4">
             <label for="pH" class="form-label">Valor de pH:</label>
-            <input type="number" class="form-control" id="pH" name="pH" placeholder="Ingresa el valor del pH" required>
+            <input type="text" class="form-control" id="pH" name="pH" placeholder="Ingresa el valor del pH" required
+              step="0.01">
           </div>
           <div class="col-md-4">
             <label for="leucoesterasa" class="form-label">Valor de Leucoesterasa:</label>
@@ -86,30 +87,32 @@
         <div class="row g-2">
           <div class="col-md-3">
             <label for="leucos" class="form-label">Valor de Leucocitos:</label>
-            <input type="number" class="form-control" id="leucos" name="leucos"
-              placeholder="Ingresa el valor de Leucocitos" required>
+            <input type="text" class="form-control" id="leucos" name="leucos"
+              placeholder="Ingresa el valor de Leucocitos" step="0.01" required>
           </div>
           <div class="col-md-3">
             <label for="density" class="form-label">Valor de Densidad:</label>
-            <input type="number" class="form-control" id="density" name="density"
-              placeholder="Ingresa el valor correspondiente a densidad" required>
+            <input type="text" class="form-control" id="density" name="density"
+              placeholder="Ingresa el valor correspondiente a densidad" step="0.01" required>
           </div>
           <div class="col-md-3">
             <label for="germen" class="form-label">Valor de Gérmenes:</label>
-            <input type="number" class="form-control" id="germen" name="germen"
-              placeholder="Ingresa el valor correspondiente a cantidad de gérmenes" required>
+            <input type="text" class="form-control" id="germen" name="germen"
+              placeholder="Ingresa el valor correspondiente a cantidad de gérmenes" step="0.01" required>
           </div>
           <div class="col-md-3">
             <label for="creatinina" class="form-label">Valor de creatinina:</label>
-            <input type="number" class="form-control" id="creatinina" name="creatinina"
-              placeholder="Ingresa el valor de creatinina" required>
+            <input type="text" class="form-control" id="creatinina" name="creatinina"
+              placeholder="Ingresa el valor de creatinina" step="0.01" required>
           </div>
         </div>
       </div>
       <br>
       <div class="d-grid gap-2 col-6 mx-auto">
         <button class="btn btn-primary" type="button" id="back2">Regresar</button>
-        <button type="submit" class="btn btn-success" type="button">Enviar Formulario</button>
+        <button type="submit" class="btn btn-success" type="button" id="myButton">
+          Enviar Formulario
+        </button>
       </div>
     </form>
   </div>
